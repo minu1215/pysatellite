@@ -11,7 +11,7 @@
   ],
   "author": "kaz1301",
   "license": "ISC",
-  "dependencies": {
-    "commander": "^11.1.0"
+  "bin": {
+    "kaz1301": "./index.js"
   }
 }
