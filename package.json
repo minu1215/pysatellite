@@ -10,5 +10,8 @@
     "kaz1301"
   ],
   "author": "kaz1301",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
 }
