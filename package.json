@@ -1,0 +1,14 @@
+{
+  "name": "kaz1301",
+  "version": "0.1.0",
+  "description": "kaz1301",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kaz1301"
+  ],
+  "author": "kaz1301",
+  "license": "ISC"
+}
