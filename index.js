@@ -50,9 +50,37 @@ console.log(`
 ..................--               ::                                                     
 `);
 
-
-const args = process.argv.slice();
-let value = args[Math.floor(Math.random() * (args.length - 2))+2];
-if(value != null){
-    console.log(value);
+class Presenter {
+    constructor() {
+        this.startString = "발표자: ";
+        this.presenterArr = [];
+    }
+    addPresenter(name) {
+        this.presenterArr.push(name);
+    }
+    print(index) {
+        if(this.presenterArr.length === 0){
+            return;
+        }
+        try{
+            console.log(`${this.startString} ${this.presenterArr[index]}`);
+        }
+        catch(e){
+            console.log('접근 불가 index');
+        }
+    }    
+    randomIndex() {
+        return Math.floor(Math.random() * (this.presenterArr.length));
+    }
 }
+
+class StringPresenter extends Presenter {
+    constructor(personString){
+        super().presenterArr = personString;
+    }
+}
+
+const args = process.argv.slice(2);
+const presenter = new StringPresenter(args);
+presenter.print(presenter.randomIndex());
+
