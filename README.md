@@ -2,7 +2,7 @@ https://www.npmjs.com/package/kaz1301/v/0.1.0
 
 https://github.com/minu1215/pysatellite
 
-# use index.js
+# use
 
 ### class Presenter
 - addPresenter(name) : 발표자 추가
@@ -11,8 +11,14 @@ https://github.com/minu1215/pysatellite
 
 ### class StringPresenter
 - constructor(Array) : 발표자 배열 생성시 적용
+
+### how to use
+```
+$ npm install -g kaz1301
+$ kaz1301 presenter1 presenter2 ...
+```
   
-# example
+### example
 ```
 $ npm uninstall -g kaz1301
 $ npm install -g kaz1301
