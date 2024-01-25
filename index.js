@@ -56,5 +56,5 @@ const args = process.argv.slice();
 let value = args[Math.floor(Math.random() * (args.length - 2))+2];
 
 if(value != null){
-    console.log(value);
+    console.log(`발표자: ${value}`);
 }
